@@ -1,9 +1,11 @@
 apply plugin: 'application'
 
-mainClassName = 'com.spectralogic.ds3contractcomparator.cli.Main'
+application {
+    mainClass = 'com.spectralogic.ds3contractcomparator.cli.Main'
+}
 
 dependencies {
-    compile 'commons-cli:commons-cli:1.3'
-    compile project(':ds3-contract-comparator')
-    compile project(':ds3-contract-comparator-print')
+    implementation 'commons-cli:commons-cli:1.3'
+    implementation project(':ds3-contract-comparator')
+    implementation project(':ds3-contract-comparator-print')
 }
